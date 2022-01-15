@@ -10,4 +10,4 @@ Project for HackReason
       1. Run chroma-gui.py in the command prompt.
       2. Select one option for each category and click submit.
       3. Run color_facts.txt in WSL using scasp.
-      4. Type a ; and click Enter to view more recommended colors, if any.
+      4. Type a semicolon (;) and click Enter to view more recommended colors, if any.
