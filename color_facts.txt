@@ -1,0 +1,131 @@
+industry(red, food).
+industry(yellow, food).
+industry(orange, food).
+industry(green, health).
+industry(blue, health).
+industry(red, health).
+industry(green, agriculture).
+industry(blue, agriculture).
+industry(yellow, agriculture).
+industry(blue, education).
+industry(yellow, education).
+industry(green, education).
+industry(blue, technology).
+industry(black, technology).
+industry(red, technology).
+industry(orange, engineering).
+industry(blue, engineering).
+industry(yellow, engineering).
+industry(black, entertainment).
+industry(red, entertainment).
+industry(yellow, entertainment).
+industry(brown, manufacturing).
+industry(red, manufacturing).
+industry(black, manufacturing).
+industry(red, media).
+industry(blue, media).
+industry(black, media).
+industry(white, media).
+industry(grey, media).
+industry(red, transportation).
+industry(yellow, transportation).
+industry(brown, transportation).
+industry(blue, transportation).
+industry(blue, finance).
+industry(green, finance).
+
+noun(green, snake).
+noun(brown, snake).
+noun(yellow, snake).
+noun(red, bull). 
+noun(brown, bull).
+noun(black, bull).
+noun(blue, bull).
+noun(orange, cat).
+noun(brown, cat).
+noun(grey, cat).
+noun(yellow, cat).
+noun(black, cat).
+noun(brown, bear).
+noun(black, bear).
+noun(white, bear).
+noun(grey, bear).
+noun(white, dove).
+noun(grey, dove).
+noun(brown, dove).
+noun(brown, buffalo).
+noun(red, buffalo).
+noun(orange, lion). 
+noun(brown, lion).
+noun(red, lion).
+noun(black, lion).
+noun(brown, horse).
+noun(black, horse).
+noun(white, horse).
+noun(grey, horse).
+noun(grey, wolf).
+noun(white, wolf).
+noun(brown, wolf).
+noun(red, wolf).
+noun(brown, owl).
+noun(grey, owl).
+noun(white, owl).
+noun(green, owl).
+noun(blue, owl).
+
+
+adj(black, classy).
+adj(purple, classy).
+adj(grey, classy).
+adj(white, classy).
+adj(black, sophisticated).
+adj(grey, sophisticated).
+adj(purple, sophisticated).
+adj(white, sophisticated).
+adj(purple, creative).
+adj(green, creative).
+adj(orange, creative).
+adj(yellow, creative).
+adj(blue, dependable).
+adj(green, dependable).
+adj(red, dependable).
+adj(blue, secure).
+adj(green, secure).
+adj(purple, secure).
+adj(yellow, positive).
+adj(orange, positive).
+adj(white, positive).
+adj(orange, friendly).
+adj(yellow, friendly).
+adj(red, bold).
+adj(black, bold).
+adj(orange, bold).
+adj(purple, bold).
+adj(red, devoted).
+adj(blue, devoted).
+adj(green, devoted).
+adj(grey, quality).
+adj(white, quality).
+adj(black, quality).
+adj(black, confident).
+adj(red, confident).
+adj(purple, confident).
+adj(orange, affordable).
+adj(blue, affordable).
+adj(yellow, affordable).
+adj(white, clean).
+adj(grey, clean).
+adj(black, clean).
+adj(white, simple).
+adj(grey, simple).
+adj(black, simple).
+
+
+
+#include 'chroma1.txt'.
+
+
+
+
+
+

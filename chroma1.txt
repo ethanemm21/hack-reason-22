@@ -1,0 +1,30 @@
+getIndustry(Industry) :- input(Industry, _, _).
+getNoun(Noun) :- input(_, Noun, _).
+getAdj(Adj) :- input(_, _, Adj).
+
+member(X,[X|_]).
+member(X,[Y|T]) :- member(X,T).
+
+
+matchIndustry(A, Industry) :- industry(A, Industry).
+matchNoun(B, Noun) :- noun(B, Noun).
+matchAdj(C, Adj) :- adj(C, Adj).
+matchColor(X, Industry, Noun, Adj) :- industry(X, Industry), noun(X, Noun), adj(X, Adj).
+
+append([], Y, Y).
+append([H|X], Y, [H|Z]) :- append(X, Y, Z).
+
+count([],X,0).
+count([X|T],X,Y):- count(T,X,Z), Y is 1+Z.
+count([X1|T],X,Z):- X1=X,count(T,X,Z).
+
+
+
+%QUERIES
+?- getIndustry(Industry), findall(A, matchIndustry(A, Industry), IndustryList),
+getNoun(Noun), findall(B, matchNoun(B, Noun), NounList), 
+getAdj(Adj), findall(C, matchAdj(C, Adj), AdjList),
+matchColor(X, Industry, Noun, Adj).
+
+
+
