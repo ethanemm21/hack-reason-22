@@ -5,9 +5,7 @@ from PIL import ImageTk, Image
 # CONSTANTS
 PEACH = "#FAD9C3"
 LIGHT_GREEN = "#D4E6C9"
-BUTTON_BGCOLOR = ""
-BUTTON_FGCOLOR = ""
-FONT_NAME = "Algerian" # algerian
+FONT_NAME = "Algerian"
 
 # WRITE INPUT PROLOG SCRIPT   
 def write():
@@ -15,16 +13,19 @@ def write():
     user_noun = noun_clicked.get()
     user_adj = adj_clicked.get()
 
-    query = f"\ninput({user_industry}, {user_noun}, {user_adj})"
-    with open("color_facts.txt", "a") as prolog_script:
-        prolog_script.write(query)
+    if user_industry == industry_options[0] or user_noun == noun_options[0] or user_adj == adj_options[0]:
+        messagebox.showinfo(title="Oops", message="Please make sure you haven't left any fields empty.")
+    else:
+        query = f"\ninput({user_industry}, {user_noun}, {user_adj})"
+        with open("color_facts.txt", "a") as prolog_script:
+            prolog_script.write(query)
 
 # UI
 window = Tk()
 window.title("Chroma")
 window.config(padx=50, pady=150, bg="black")
 
-title_label = Label(text="CHROMA", fg=LIGHT_GREEN, bg="black", font=(FONT_NAME, 50)) # add fg and bg colors
+title_label = Label(text="CHROMA", fg=LIGHT_GREEN, bg="black", font=(FONT_NAME, 50))
 title_label.grid(row=1, column=1)
 
 canvas = Canvas(height=200, width=200, bg="black")
