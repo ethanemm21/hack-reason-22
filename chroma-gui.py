@@ -13,9 +13,12 @@ def write():
     user_noun = noun_clicked.get()
     user_adj = adj_clicked.get()
 
-    query = f"\ninput({user_industry}, {user_noun}, {user_adj})"
-    with open("color_facts.txt", "a") as prolog_script:
-        prolog_script.write(query)
+    if user_industry == industry_options[0] or user_noun == noun_options[0] or user_adj == adj_options[0]:
+        messagebox.showinfo(title="Oops", message="Please make sure you haven't left any fields empty.")
+    else:
+        query = f"\ninput({user_industry}, {user_noun}, {user_adj})"
+        with open("color_facts.txt", "a") as prolog_script:
+            prolog_script.write(query)
 
 # UI
 window = Tk()
