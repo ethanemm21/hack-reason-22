@@ -19,6 +19,7 @@ def write():
         query = f"\ninput({user_industry}, {user_noun}, {user_adj})"
         with open("color_facts.txt", "a") as prolog_script:
             prolog_script.write(query)
+            messagebox.showinfo(title="Success!", message="Query successfully submitted.")
 
 # UI
 window = Tk()

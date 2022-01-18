@@ -123,12 +123,3 @@ adj(black, simple).
 
 
 #include 'chroma1.txt'.
-
-
-
-
-
-
-
-input(Agriculture, Bull, Dependable)
-input(Health, Cat, Creative)
